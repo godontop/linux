@@ -17,20 +17,9 @@ function FindProxyForURL(url, host) {
     if (dnsDomainIs(host, '.e.crashlytics.com') || host == 'e.crashlytics.com') return xtunnel;
     if (dnsDomainIs(host, '.amazonaws.com') || host == 'amazonaws.com') return xtunnel;
     if (dnsDomainIs(host, '.compute-1.amazonaws.com') || host == 'compute-1.amazonaws.com') return xtunnel;
-    if (dnsDomainIs(host, '.ec2-107-22-198-70.compute-1.amazonaws.com') || host == 'ec2-107-22-198-70.compute-1.amazonaws.com') return xtunnel;
-    if (dnsDomainIs(host, '.ec2-107-22-209-155.compute-1.amazonaws.com') || host == 'ec2-107-22-209-155.compute-1.amazonaws.com') return xtunnel;
-    if (dnsDomainIs(host, '.ec2-107-22-210-124.compute-1.amazonaws.com') || host == 'ec2-107-22-210-124.compute-1.amazonaws.com') return xtunnel;
-    if (dnsDomainIs(host, '.ec2-107-22-210-216.compute-1.amazonaws.com') || host == 'ec2-107-22-210-216.compute-1.amazonaws.com') return xtunnel;
-    if (dnsDomainIs(host, '.ec2-107-22-215-230.compute-1.amazonaws.com') || host == 'ec2-107-22-215-230.compute-1.amazonaws.com') return xtunnel;
-    if (dnsDomainIs(host, '.ec2-107-22-239-163.compute-1.amazonaws.com') || host == 'ec2-107-22-239-163.compute-1.amazonaws.com') return xtunnel;
     if (dnsDomainIs(host, '.cloudfront.net') || host == 'cloudfront.net') return xtunnel;
     if (dnsDomainIs(host, '.r.cloudfront.net') || host == 'r.cloudfront.net') return xtunnel;
     if (dnsDomainIs(host, '.hkg51.r.cloudfront.net') || host == 'hkg51.r.cloudfront.net') return xtunnel;
-    if (dnsDomainIs(host, '.server-52-85-148-32.hkg51.r.cloudfront.net') || host == 'server-52-85-148-32.hkg51.r.cloudfront.net') return xtunnel;
-    if (dnsDomainIs(host, '.server-52-85-148-64.hkg51.r.cloudfront.net') || host == 'server-52-85-148-64.hkg51.r.cloudfront.net') return xtunnel;
-    if (dnsDomainIs(host, '.server-52-85-148-67.hkg51.r.cloudfront.net') || host == 'server-52-85-148-67.hkg51.r.cloudfront.net') return xtunnel;
-    if (dnsDomainIs(host, '.server-52-85-148-150.hkg51.r.cloudfront.net') || host == 'server-52-85-148-150.hkg51.r.cloudfront.net') return xtunnel;
-    if (dnsDomainIs(host, '.server-52-85-148-173.hkg51.r.cloudfront.net') || host == 'server-52-85-148-173.hkg51.r.cloudfront.net') return xtunnel;
 
 // DEFAULT RULE: All other traffic
     return "DIRECT";

@@ -6,7 +6,6 @@
 
 set nobackup " do not keep a backup file
 set number   " Print the line number in front of each line
+syntax on
 
-" Automatic commands Start
 colorscheme desert  " specify VIM's color scheme
-" Automatic commands End

@@ -12,6 +12,7 @@ function FindProxyForURL(url, host) {
     if (dnsDomainIs(host, '.facebook.net') || host == 'facebook.net') return xtunnel;
     if (dnsDomainIs(host, '.fbcdn.net') || host == 'fbcdn.net') return xtunnel;
     if (dnsDomainIs(host, '.atdmt.com') || host == 'atdmt.com') return xtunnel;
+    if (dnsDomainIs(host, '.twitter.com') || host == 'twitter.com') return xtunnel;
     if (dnsDomainIs(host, '.mozilla.net') || host == 'mozilla.net') return xtunnel;
     if (dnsDomainIs(host, '.todoist.com') || host == 'todoist.com') return xtunnel;
     if (dnsDomainIs(host, '.crashlytics.com') || host == 'crashlytics.com') return xtunnel;

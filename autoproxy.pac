@@ -4,6 +4,7 @@ function FindProxyForURL(url, host) {
     if (dnsDomainIs(host, '.google.com') || host == 'google.com') return xtunnel;
     if (dnsDomainIs(host, '.gstatic.com') || host == 'gstatic.com') return xtunnel;
     if (dnsDomainIs(host, '.doubleclick.net') || host == 'doubleclick.net') return xtunnel;
+    if (dnsDomainIs(host, '.blogger.com') || host == 'blogger.com') return xtunnel;
     if (dnsDomainIs(host, '.youtube.com') || host == 'youtube.com') return xtunnel;
     if (dnsDomainIs(host, '.ytimg.com') || host == 'ytimg.com') return xtunnel;
     if (dnsDomainIs(host, '.ggpht.com') || host == 'ggpht.com') return xtunnel;

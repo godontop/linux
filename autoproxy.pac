@@ -14,11 +14,13 @@ function FindProxyForURL(url, host) {
     if (dnsDomainIs(host, '.fbcdn.net') || host == 'fbcdn.net') return xtunnel;
     if (dnsDomainIs(host, '.atdmt.com') || host == 'atdmt.com') return xtunnel;
     if (dnsDomainIs(host, '.twitter.com') || host == 'twitter.com') return xtunnel;
+    if (dnsDomainIs(host, '.twimg.com') || host == 'twimg.com') return xtunnel;
     if (dnsDomainIs(host, '.mozilla.net') || host == 'mozilla.net') return xtunnel;
     if (dnsDomainIs(host, '.todoist.com') || host == 'todoist.com') return xtunnel;
     if (dnsDomainIs(host, '.crashlytics.com') || host == 'crashlytics.com') return xtunnel;
     if (dnsDomainIs(host, '.amazonaws.com') || host == 'amazonaws.com') return xtunnel;
     if (dnsDomainIs(host, '.cloudfront.net') || host == 'cloudfront.net') return xtunnel;
+    if (dnsDomainIs(host, '.my.vultr.com') || host == 'my.vultr.com') return xtunnel;
 
 // DEFAULT RULE: All other traffic
     return "DIRECT";

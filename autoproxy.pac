@@ -2,6 +2,7 @@
 function FindProxyForURL(url, host) {
     var xtunnel = 'SOCKS5 192.168.1.175; SOCKS 192.168.1.175:1080';
     if (dnsDomainIs(host, '.google.com') || host == 'google.com') return xtunnel;
+    if (dnsDomainIs(host, '.google.to') || host == 'google.to') return xtunnel;
     if (dnsDomainIs(host, '.gstatic.com') || host == 'gstatic.com') return xtunnel;
     if (dnsDomainIs(host, '.doubleclick.net') || host == 'doubleclick.net') return xtunnel;
     if (dnsDomainIs(host, '.blogger.com') || host == 'blogger.com') return xtunnel;

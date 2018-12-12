@@ -1,0 +1,6 @@
+---
+- hosts: zj2.3
+  remote_user: root
+  tasks:
+      - name: check git-daemon's status
+        shell: /usr/bin/systemctl status git-daemon || /usr/bin/true

@@ -1,0 +1,6 @@
+---
+- hosts: zj2.3
+  remote_user: root
+  tasks:
+      - name: enable selinux
+        command: /sbin/setenforce 1

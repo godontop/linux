@@ -1,0 +1,8 @@
+---
+- hosts: zj2.3
+  remote_user: root
+  tasks:
+    - name: write git-daemon.service file
+      template:
+          src: /srv/git-daemon.service
+          dest: /etc/systemd/system/git-daemon.service

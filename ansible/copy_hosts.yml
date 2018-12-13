@@ -1,0 +1,7 @@
+---
+- hosts: zj2.3
+  remote_user: root
+  tasks:
+      - name: Copy ansible inventory file to client
+        copy: src=/etc/ansible/hosts dest=/etc/ansible/hosts
+                owner=root group=root mode=0644

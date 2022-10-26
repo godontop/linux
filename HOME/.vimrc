@@ -10,6 +10,7 @@ set nocompatible          " be iMproved, required
 
 set nobackup " do not keep a backup file
 set number   " Print the line number in front of each line
+set pastetoggle=<F10>
 syntax on
 
 colorscheme desert  " specify VIM's color scheme

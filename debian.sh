@@ -1,3 +1,3 @@
 # release: Debian 11
 # recommend installed package
-apt install tmux -y
+apt install git tmux -y

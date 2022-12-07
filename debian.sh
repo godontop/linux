@@ -1,4 +1,4 @@
 # release: Debian 11
 # recommend installed package
-apt install git tmux zsh -y
+apt install apt-file git psmisc tmux zsh -y
 

@@ -1,24 +1,25 @@
 // 客户端配置，最小配置
 { 
-  // 入站设置
+  // 入站设置。一个数组，每个元素是一个入站连接配置。
   "inbounds": [
   {
     "port": 1080,        // 本地监听端口（socks 代理端口）
     "protocol": "socks", // 代理协议
     "listen": "0.0.0.0"  // 启用代理的网络接口
   }],
-  // 出站设置
+  // 出站设置。一个数组，每个元素是一个出站连接配置。列表中的第一个元素作为
+  // 主出站协议。当路由匹配不存在或没有匹配成功时，流量由主出站协议发出。
   "outbounds": [
   {
     "protocol": "vmess", // 与 v2ray 服务器通信的协议
     "settings": {        // v2ray 服务器信息
-      "vnext": [
+      "vnext": [         // 一个数组，包含一系列的服务器配置
         {
-          "address": "v2rayserver.ip", // 服务器地址
+          "address": "v2rayserver.ip", // 服务器地址，支持 IP 地址或者域名。
           "port": 10086,               // 服务器监听端口
-          "users": [
+          "users": [                   // 一组服务器认可的用户
             {
-              "id": "3d45f9cc-0c3e-4253-afc3-09ed7ba4fd6d" // 用户的 UUID
+              "id": "3d45f9cc-0c3e-4253-afc3-09ed7ba4fd6d" // VMess 用户的主 ID。必须是一个合法的 UUID。
             }
           ]
         }
